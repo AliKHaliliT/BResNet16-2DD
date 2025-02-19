@@ -3,7 +3,7 @@ name: Tests
 on:
   pull_request:
     paths:
-      - "BResNet161DD/**"
+      - "BResNet162DD/**"
       - "tests/**"
 
 jobs:
