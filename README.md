@@ -51,7 +51,7 @@ The codebase is fully integratable inside the TensorFlow and Keras code pipeline
 </div>
 <br/>
 
-*Note: The image above represents the architectural modifications. It depicts 2D convolutional layers, whereas this project is focused on 2D convolutions. The image is sourced from the referenced paper.*
+*Note: The image is sourced from the referenced paper.*
 
 ## Installation & Usage
 This code is compatible with **Python 3.12.8** and **TensorFlow 2.18.0**.
