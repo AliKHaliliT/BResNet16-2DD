@@ -1,8 +1,10 @@
+from tensorflow.keras.saving import register_keras_serializable # type: ignore
 import tensorflow as tf
 from ..layers.conv2d_layer import Conv2DLayer
 from typing import Union, Any
 
 
+@register_keras_serializable()
 class BottleneckResidual2DD(tf.keras.layers.Layer):
 
     """
