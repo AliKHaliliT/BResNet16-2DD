@@ -91,7 +91,7 @@ class BResNet162DD(tf.keras.Model):
 
         """
 
-        if input_shape[2] < 32 or input_shape[3] < 32:
+        if input_shape[1] < 32 or input_shape[2] < 32:
             logging.warning("Caution: Setting input width and height to anything lower than 32x32 is not recommended!")
 
 
