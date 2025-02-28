@@ -3,11 +3,6 @@ import tensorflow as tf
 from .assets.layers.conv2d_layer import Conv2DLayer
 from .assets.blocks.bottleneck_residual2d_d import BottleneckResidual2DD
 from typing import Union, Any
-import logging
-
-
-# Configure logging
-logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
 
 
 @register_keras_serializable()
@@ -90,10 +85,6 @@ class BResNet162DD(tf.keras.Model):
         None.
 
         """
-
-        if input_shape[1] < 32 or input_shape[2] < 32:
-            logging.warning("Caution: Setting input width and height to anything lower than 32x32 is not recommended!")
-
 
         super().build(input_shape)
 
